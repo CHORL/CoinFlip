@@ -19,21 +19,19 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Flip A Coin"
         android:id="@+id/textView"
-        android:layout_gravity="top|center_horizontal"
-        android:background="#fffbffb7" /> <!-- Just for display and to tell you what to do -->
+        android:layout_gravity="top|center_horizontal"/> <!-- Just for display and to tell you what to do -->
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal">
 
         <ImageButton
-            android:layout_width="153dp"
-            android:layout_height="153dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/round_button"
-            android:gravity="center_vertical|center_horizontal"
-            android:layout_gravity="center_vertical" />
+            android:gravity="center_vertical|center_horizontal"/>
     </LinearLayout>
 
 </LinearLayout>
