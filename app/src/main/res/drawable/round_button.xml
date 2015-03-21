@@ -8,4 +8,4 @@
     <size
         android:width="120dp"
         android:height="120dp"/>
-</shape>
+</shape> <!-- Made a drawable xml circle file for placing the coin -->

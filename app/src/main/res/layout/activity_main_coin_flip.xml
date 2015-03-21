@@ -19,7 +19,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Flip A Coin"
         android:id="@+id/textView"
-        android:layout_gravity="top|center_horizontal" />
+        android:layout_gravity="top|center_horizontal"/> <!-- Just for display and to tell you what to do -->
 
     <LinearLayout
         android:orientation="horizontal"
