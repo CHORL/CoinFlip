@@ -1,23 +1,67 @@
 package com.Android.Project.coinflip;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.media.AudioManager;
 import android.media.SoundPool;
-
-
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 
 public class MainCoinFlip extends ActionBarActivity
 {
 
+Button Coin;
+LinearLayout myLO;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_coin_flip);
+        myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
+        final Button Coin = (Button) findViewById(R.id.Coin);
+
+        for() {
+            Coin.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    public void onClick (View v){
+                        Coin.setBackgroundColor(Color.BLUE);
+
+                    }
+                }
+            });
+            RandomNumberGenerator number = new RandomNumberGenerator();
+            int Ran_Number = number.randInt();
+
+            if (Ran_Number == 1) {
+
+                Coin.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Coin.setBackgroundColor(Color.RED);
+                    }
+                });
+
+            }
+            else if(Ran_Number == 2){
+                Coin.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Coin.setBackgroundColor(Color.GREEN);
+                    }
+                });
+
+            }
+        }
     }
 
 
@@ -45,4 +89,7 @@ public class MainCoinFlip extends ActionBarActivity
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }
