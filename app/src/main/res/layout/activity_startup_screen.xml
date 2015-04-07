@@ -33,6 +33,8 @@
         android:layout_weight="1"
         android:background="@color/switch_thumb_normal_material_light"
         android:textStyle="bold"
-        android:textColor="#ff000000" />
+        android:textColor="#ff000000"
+        android:onClick="sendMessage" />
+
 
 </LinearLayout>
