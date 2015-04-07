@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:baselineAligned="true"
     android:background="@drawable/background_wood"
-    android:id="@+id/">
+    android:id="@+id/StartupLinear">
 
 
     <TextView

@@ -28,13 +28,14 @@ LinearLayout myLO;
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
         final Button Coin = (Button) findViewById(R.id.Coin);
 
-        for() {
+
+        do{
             Coin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                    public void onClick (View v){
-                        Coin.setBackgroundColor(Color.BLUE);
+                    public void onClick(View v){
+                        Coin.setBackgroundResource(R.drawable.CoinAnimation);
 
                     }
                 }
@@ -61,7 +62,7 @@ LinearLayout myLO;
                 });
 
             }
-        }
+        }while(1 < 2 );
     }
 
 
