@@ -40,7 +40,7 @@ LinearLayout myLO;
                 {
 
 
-                        Coin.setBackgroundResource(R.drawable.coin_animation);
+                        Coin.setBackgroundColor(Color.BLUE);
 
                     }
 

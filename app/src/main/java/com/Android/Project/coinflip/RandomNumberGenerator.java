@@ -2,8 +2,10 @@ package com.Android.Project.coinflip;
 //Class for generating a random number to use in deciding which side of the coin is to show
 import java.util.Random;
 //random utility to create numbers
-public class RandomNumberGenerator {
-    public static int randInt() {
+public class RandomNumberGenerator
+{
+    public static int randInt()
+    {
         //Two int and an object to create a random number between one and two
         int min = 1;
         int max = 2;
