@@ -22,18 +22,22 @@ Button Coin;
 LinearLayout myLO;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_coin_flip);
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
 
 
 
-        do{
+        do
+        {
             final Button Coin = (Button) findViewById(R.id.Coin);
-            Coin.setOnClickListener(new View.OnClickListener() {
+            Coin.setOnClickListener(new View.OnClickListener()
+            {
                 @Override
-                public void onClick(View v) {
+                public void onClick(View v)
+                {
 
 
                         Coin.setBackgroundResource(R.drawable.CoinAnimation);
@@ -44,20 +48,26 @@ LinearLayout myLO;
             RandomNumberGenerator number = new RandomNumberGenerator();
             int Ran_Number = number.randInt();
 
-            if (Ran_Number == 1) {
+            if (Ran_Number == 1)
+            {
 
-                Coin.setOnClickListener(new View.OnClickListener() {
+                Coin.setOnClickListener(new View.OnClickListener()
+                {
                     @Override
-                    public void onClick(View v) {
+                    public void onClick(View v)
+                    {
                         Coin.setBackgroundColor(Color.RED);
                     }
                 });
 
             }
-            else if(Ran_Number == 2){
-                Coin.setOnClickListener(new View.OnClickListener() {
+            else if(Ran_Number == 2)
+            {
+                Coin.setOnClickListener(new View.OnClickListener()
+                {
                     @Override
-                    public void onClick(View v) {
+                    public void onClick(View v)
+                    {
                         Coin.setBackgroundColor(Color.GREEN);
                     }
                 });
