@@ -40,7 +40,7 @@ LinearLayout myLO;
                 {
 
 
-                        Coin.setBackgroundColor(Color.BLUE);
+                    Coin.setBackgroundColor(Color.BLUE);
 
                     }
 
