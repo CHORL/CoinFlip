@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import com.Android.Project.coinflip.R;
 
 
 public class MainCoinFlip extends ActionBarActivity
@@ -41,7 +40,7 @@ LinearLayout myLO;
                 {
 
 
-                        Coin.setBackgroundResource(R.drawable.coin_animation);
+                        Coin.setBackgroundColor(Color.BLUE);
 
                     }
 
