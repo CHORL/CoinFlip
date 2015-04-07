@@ -4,16 +4,16 @@
     android:id="@+id/myprogress"
     android:oneshot="false"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="drawable/round_button"
+    <item android:drawable="drawable/background_wood"
         android:duration="50" />
-    <item android:drawable="drawable/wheel4"
+    <item android:drawable="drawable/gold_coin"
         android:duration="50" />
-    <item android:drawable="drawable/wheel3"
+    <item android:drawable="drawable/background_wood"
         android:duration="50" />
-    <item android:drawable="drawable/round_button"
+    <item android:drawable="drawable/gold_coin"
         android:duration="50" />
-    <item android:drawable="drawable/wheel4"
+    <item android:drawable="drawable/background_wood"
         android:duration="50" />
-    <item android:drawable="drawable/wheel3"
+    <item android:drawable="drawable/gold_coin"
         android:duration="50" />
 </animation-list>

@@ -11,8 +11,7 @@
     android:weightSum="1"
     android:background="@drawable/background_wood"
     android:orientation="vertical"
-    android:id="@+id/MainCoinLayout"
-    android:clickable="true">
+    android:id="@+id/MainCoinLayout">
 
     <TextView
         android:layout_width="match_parent"
