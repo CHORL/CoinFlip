@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<animation-list   android:id="@+id/myprogress" android:oneshot="false"
+<animation-list
+    android:id="@+id/myprogress"
+    android:oneshot="false"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="drawable/round_button" android:duration="50" />
     <item android:drawable="drawable/wheel4" android:duration="50" />
