@@ -39,7 +39,7 @@ LinearLayout myLO;
                         Coin.setBackgroundResource(R.drawable.CoinAnimation);
 
                     }
-                
+
             });
             RandomNumberGenerator number = new RandomNumberGenerator();
             int Ran_Number = number.randInt();
