@@ -30,7 +30,7 @@ LinearLayout myLO;
 
 
 
-        do
+        while(1 < 2)
         {
             final Button Coin = (Button) findViewById(R.id.Coin);
             Coin.setOnClickListener(new View.OnClickListener()
@@ -73,7 +73,7 @@ LinearLayout myLO;
                 });
 
             }
-        }while(1 < 2 );
+        }
     }
 
 
