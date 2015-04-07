@@ -26,19 +26,20 @@ LinearLayout myLO;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_coin_flip);
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
-        final Button Coin = (Button) findViewById(R.id.Coin);
+
 
 
         do{
+            final Button Coin = (Button) findViewById(R.id.Coin);
             Coin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                    public void onClick(View v){
+
                         Coin.setBackgroundResource(R.drawable.CoinAnimation);
 
                     }
-                }
+                
             });
             RandomNumberGenerator number = new RandomNumberGenerator();
             int Ran_Number = number.randInt();

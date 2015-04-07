@@ -5,6 +5,6 @@ package com.Android.Project.coinflip;
  */
 public class Startup_Class {
 
-    
+
 
 }
