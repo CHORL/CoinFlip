@@ -29,49 +29,11 @@ LinearLayout myLO;
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
         RandomNumberGenerator number = new RandomNumberGenerator();
         int Ran_Number = number.randInt();
-        //random
+        final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
+        Coin.setBackgroundResource(R.drawable.gold_coin);
 
 
-            final Button Coin = (Button) findViewById(R.id.Coin);
-            Coin.setOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View v)
-                {
 
-
-                    Coin.setBackgroundColor(Color.BLUE);
-
-                    }
-
-            });
-
-            if (Ran_Number == 1)
-            {
-
-                Coin.setOnClickListener(new View.OnClickListener()
-                {
-                    @Override
-                    public void onClick(View v)
-                    {
-                        Coin.setBackgroundColor(Color.RED);
-                    }
-                });
-
-            }
-
-            else if(Ran_Number == 2)
-            {
-                Coin.setOnClickListener(new View.OnClickListener()
-                {
-                    @Override
-                    public void onClick(View v)
-                    {
-                        Coin.setBackgroundColor(Color.GREEN);
-                    }
-                });
-
-            }
 
     }
 
