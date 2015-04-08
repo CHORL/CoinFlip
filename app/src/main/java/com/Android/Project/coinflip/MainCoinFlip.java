@@ -27,8 +27,8 @@ LinearLayout myLO;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_coin_flip);
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
-
-
+        RandomNumberGenerator number = new RandomNumberGenerator();
+        int Ran_Number = number.randInt();
 
         while(1 < 2)
         {
@@ -45,8 +45,6 @@ LinearLayout myLO;
                     }
 
             });
-            RandomNumberGenerator number = new RandomNumberGenerator();
-            int Ran_Number = number.randInt();
 
             if (Ran_Number == 1)
             {
@@ -61,6 +59,7 @@ LinearLayout myLO;
                 });
 
             }
+
             else if(Ran_Number == 2)
             {
                 Coin.setOnClickListener(new View.OnClickListener()
