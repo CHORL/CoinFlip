@@ -18,7 +18,7 @@ public class MainCoinFlip extends ActionBarActivity
 
 LinearLayout myLO;
 final RandomNumberGenerator number = new RandomNumberGenerator();
-int Ran_Number = number.randInt();
+int Ran_Number = number.randInt(); //random coin chance
 int played;
 
     @Override
