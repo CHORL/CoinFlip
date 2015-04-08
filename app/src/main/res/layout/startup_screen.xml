@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -34,8 +35,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/Coin"
-        android:clickable="true" />
+        android:id="@+id/startbutton"
+        android:layout_gravity="center_horizontal" />
+
+
     <!-- Just for display and to tell you what to do -->
+
+
+
 
 </LinearLayout>
