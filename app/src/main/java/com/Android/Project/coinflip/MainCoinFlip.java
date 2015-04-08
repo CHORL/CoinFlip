@@ -18,7 +18,6 @@ import android.widget.LinearLayout;
 public class MainCoinFlip extends ActionBarActivity
 {
 
-Button Coin;
 LinearLayout myLO;
 
     @Override
@@ -35,7 +34,14 @@ LinearLayout myLO;
 
 
 
+
     }
+    public void buttonOnClick(View v)
+    {
+        Button Coin =(Button) v;
+        ((Button) v).setBackgroundResource(R.drawable.plain_gold_coin);
+    }
+
 
 
     @Override
