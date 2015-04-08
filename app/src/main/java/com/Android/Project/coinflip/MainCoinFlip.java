@@ -30,8 +30,7 @@ LinearLayout myLO;
         RandomNumberGenerator number = new RandomNumberGenerator();
         int Ran_Number = number.randInt();
 
-        while(1 < 2)
-        {
+
             final Button Coin = (Button) findViewById(R.id.Coin);
             Coin.setOnClickListener(new View.OnClickListener()
             {
@@ -72,7 +71,7 @@ LinearLayout myLO;
                 });
 
             }
-        }
+
     }
 
 
