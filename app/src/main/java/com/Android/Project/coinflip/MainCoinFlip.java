@@ -19,7 +19,6 @@ public class MainCoinFlip extends ActionBarActivity
 {
 
 LinearLayout myLO;
-final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -29,6 +28,7 @@ final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
         RandomNumberGenerator number = new RandomNumberGenerator();
         int Ran_Number = number.randInt();
+        final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
         Coin.setBackgroundResource(R.drawable.gold_coin);
 
 
@@ -36,7 +36,7 @@ final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
 
 
     }
-    public void buttonOnClick(View v)
+    public void buttonOnClick(View Coin)
     {
         Coin.setBackgroundResource(R.drawable.plain_gold_coin);
     }
