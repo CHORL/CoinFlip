@@ -34,7 +34,8 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:gravity="center">
+        android:gravity="center"
+        android:onClick="buttonOnClick">
 
         <ImageButton
             android:layout_width="wrap_content"
