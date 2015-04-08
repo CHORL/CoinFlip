@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.media.MediaPlayer;
 
 import java.util.Random;
 
@@ -39,10 +40,13 @@ int Ran_Number = number.randInt();
     }
     public void buttonOnClick(View Coin)
     {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.coin_drop_sound);
+        mediaPlayer.start();
 
         if (Ran_Number == 1)
         {
             Coin.setBackgroundResource(R.drawable.plain_gold_coin);
+
         }
         if (Ran_Number == 2)
         {
