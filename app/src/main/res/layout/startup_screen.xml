@@ -12,8 +12,7 @@
     android:weightSum="1"
     android:background="@drawable/background_wood"
     android:orientation="vertical"
-    android:id="@+id/MainCoinLayout"
-    android:gravity="top|clip_horizontal|center|clip_vertical|fill">
+    android:id="@+id/StartingLayout">
 
     <TextView
         android:layout_width="match_parent"
@@ -31,12 +30,19 @@
         android:textSize="50sp"
         android:editable="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/startbutton"
-        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom|center"
+        android:id="@+id/">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/startbutton"
+            android:visibility="invisible" />
+    </LinearLayout>
 
 
     <!-- Just for display and to tell you what to do -->
