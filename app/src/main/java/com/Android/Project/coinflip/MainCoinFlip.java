@@ -19,6 +19,7 @@ public class MainCoinFlip extends ActionBarActivity
 LinearLayout myLO;
 final RandomNumberGenerator number = new RandomNumberGenerator();
 int Ran_Number = number.randInt();
+int played;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -28,28 +29,50 @@ int Ran_Number = number.randInt();
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
         final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
         Coin.setBackgroundResource(R.drawable.gold_coin);
+        played = 0;
 
 
 
     }
     public void buttonOnClick(View Coin)
     {
-        ImageView img_animation = (ImageView)findViewById(R.id.animation);
-        img_animation.setBackgroundResource(R.drawable.animation);
-        AnimationDrawable frameAnimation = (AnimationDrawable) img_animation.getBackground();
-        frameAnimation.start();
+        //ImageView img_animation = (ImageView)findViewById(R.id.animation);
+        //img_animation.setBackgroundResource(R.drawable.animation);
+        //AnimationDrawable frameAnimation = (AnimationDrawable) img_animation.getBackground();
+        //frameAnimation.start();
         MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.coin_drop_sound);
         mediaPlayer.start();
-
-        if (Ran_Number == 1)
+        if (played ==0)
         {
-            Coin.setBackgroundResource(R.drawable.plain_gold_coin);
+
+            if (Ran_Number == 1)
+            {
+                Coin.setBackgroundResource(R.drawable.plain_gold_coin);
+                played = 1;
+
+            }
+            if (Ran_Number == 2)
+            {
+                Coin.setBackgroundResource(R.drawable.gold_coin);
+                played = 1;
+            }
+        }
+        if (played == 1)
+        {
+            if (Ran_Number == 1)
+            {
+                Coin.setBackgroundResource(R.drawable.plain_gold_coin);
+                played = 0;
+
+            }
+            if (Ran_Number == 2)
+            {
+                Coin.setBackgroundResource(R.drawable.gold_coin);
+                played = 0;
+            }
 
         }
-        if (Ran_Number == 2)
-        {
-            Coin.setBackgroundResource(R.drawable.gold_coin);
-        }
+
 
     }
 
