@@ -29,6 +29,7 @@ LinearLayout myLO;
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
         RandomNumberGenerator number = new RandomNumberGenerator();
         int Ran_Number = number.randInt();
+        //random
 
 
             final Button Coin = (Button) findViewById(R.id.Coin);
