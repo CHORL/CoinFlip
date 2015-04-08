@@ -1,21 +1,16 @@
 package com.Android.Project.coinflip;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.media.Image;
+import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.media.AudioManager;
-import android.media.SoundPool;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.media.MediaPlayer;
 
-import java.util.Random;
 
 
 public class MainCoinFlip extends ActionBarActivity
@@ -36,10 +31,13 @@ int Ran_Number = number.randInt();
 
 
 
-
     }
     public void buttonOnClick(View Coin)
     {
+        ImageView img_animation = (ImageView)findViewById(R.id.animation);
+        img_animation.setBackgroundResource(R.drawable.animation);
+        AnimationDrawable frameAnimation = (AnimationDrawable) img_animation.getBackground();
+        frameAnimation.start();
         MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.coin_drop_sound);
         mediaPlayer.start();
 
