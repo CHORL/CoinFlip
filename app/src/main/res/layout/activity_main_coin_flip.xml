@@ -24,7 +24,7 @@
         android:textStyle="bold|italic"
         android:textColorLink="@color/abc_primary_text_disable_only_material_dark"
         android:textIsSelectable="false"
-        android:textAlignment="center"
+        android:gravity="center"
         android:singleLine="false"
         android:textColor="#fffdff73"
         android:textSize="50sp" /> <!-- Just for display and to tell you what to do -->
@@ -38,11 +38,11 @@
         android:gravity="center"
         android:paddingBottom="45dp">
 
-        <Button
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/Coin"/>
+            android:id="@+id/Coin"
+            android:layout_gravity="center_vertical" />
     </LinearLayout>
 
 </LinearLayout>
