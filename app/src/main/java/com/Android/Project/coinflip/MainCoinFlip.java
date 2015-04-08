@@ -14,11 +14,15 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import java.util.Random;
+
 
 public class MainCoinFlip extends ActionBarActivity
 {
 
 LinearLayout myLO;
+final RandomNumberGenerator number = new RandomNumberGenerator();
+int Ran_Number = number.randInt();
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -26,11 +30,8 @@ LinearLayout myLO;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_coin_flip);
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
-        RandomNumberGenerator number = new RandomNumberGenerator();
-        int Ran_Number = number.randInt();
         final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
         Coin.setBackgroundResource(R.drawable.gold_coin);
-
 
 
 
@@ -38,7 +39,16 @@ LinearLayout myLO;
     }
     public void buttonOnClick(View Coin)
     {
-        Coin.setBackgroundResource(R.drawable.plain_gold_coin);
+
+        if (Ran_Number == 1)
+        {
+            Coin.setBackgroundResource(R.drawable.plain_gold_coin);
+        }
+        if (Ran_Number == 2)
+        {
+            Coin.setBackgroundResource(R.drawable.gold_coin);
+        }
+
     }
 
 
