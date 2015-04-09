@@ -35,7 +35,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="bottom|center"
-        android:id="@+id/">
+        android:id="@+id/startLinearLayout">
 
         <Button
             android:layout_width="match_parent"

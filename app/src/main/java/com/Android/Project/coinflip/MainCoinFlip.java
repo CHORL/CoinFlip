@@ -19,7 +19,6 @@ public class MainCoinFlip extends ActionBarActivity
 LinearLayout myLO;
 final RandomNumberGenerator number = new RandomNumberGenerator();
 int Ran_Number = number.randInt(); //random coin chance
-int played;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -29,7 +28,6 @@ int played;
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
         final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
         Coin.setBackgroundResource(R.drawable.gold_coin);
-        played = 0;
 
 
 
@@ -42,37 +40,19 @@ int played;
         //frameAnimation.start();
         MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.coin_drop_sound);
         mediaPlayer.start();
-        if (played ==0)
         {
-
             if (Ran_Number == 1)
             {
                 Coin.setBackgroundResource(R.drawable.plain_gold_coin);
-                played = 1;
+                Ran_Number = number.randInt();
 
             }
             if (Ran_Number == 2)
             {
                 Coin.setBackgroundResource(R.drawable.gold_coin);
-                played = 1;
+                Ran_Number = number.randInt();
             }
         }
-        if (played == 1)
-        {
-            if (Ran_Number == 1)
-            {
-                Coin.setBackgroundResource(R.drawable.plain_gold_coin);
-                played = 0;
-
-            }
-            if (Ran_Number == 2)
-            {
-                Coin.setBackgroundResource(R.drawable.gold_coin);
-                played = 0;
-            }
-
-        }
-
 
     }
 
