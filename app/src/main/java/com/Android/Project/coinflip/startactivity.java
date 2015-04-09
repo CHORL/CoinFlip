@@ -11,7 +11,20 @@ import android.widget.Button;
  */
 public class startactivity extends MainCoinFlip {
 
+    //Aktivitet för att starta
+
+    @Override
     public void onCreate(Bundle savedInstances){
+        setContentView(R.layout.startup_screen);
+        final Button switchact =(Button)findViewById(R.id.startbutton);
+        switchact.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent act2 = new Intent(view.getContext(),MainCoinFlip.class);
+                startActivity(act2);
+            }
+        });
+
 
     }
 

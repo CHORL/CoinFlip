@@ -18,14 +18,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Flip A Coin"
+        android:text="Start"
         android:id="@+id/textView"
         android:layout_gravity="top|center_horizontal"
         android:textStyle="bold|italic"
         android:textColorLink="@color/abc_primary_text_disable_only_material_dark"
         android:textIsSelectable="false"
         android:gravity="center"
-        android:singleLine="false"
+        android:singleLine="true"
         android:textColor="#fffdff73"
         android:textSize="50sp"
         android:editable="true" />
@@ -35,13 +35,13 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="bottom|center"
-        android:id="@+id/startLinearLayout">
+        android:id="@+id/">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/startbutton"
-            android:visibility="invisible" />
+            android:visibility="visible" />
     </LinearLayout>
 
 

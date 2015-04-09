@@ -7,17 +7,23 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".startactivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">   <!-- The the not-turn thingy here too-->
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" /><!--Made startup screen the first activity to be loaded -->
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".MainCoinFlip"
             android:label="@string/app_name"
             android:screenOrientation="portrait"> <!-- Made it so the application can not be turned -->
-            <intent-filter>
-                <action
-                    android:name="android.intent.action.MAIN" />
-
-                <category
-                    android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
