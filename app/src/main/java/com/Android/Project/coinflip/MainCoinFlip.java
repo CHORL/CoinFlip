@@ -28,10 +28,8 @@ int Ran_Number = number.randInt(); //random coin chance
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
         final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
         Coin.setBackgroundResource(R.drawable.gold_coin);
-
-
-
     }
+
     public void buttonOnClick(View Coin)
     {
         //ImageView img_animation = (ImageView)findViewById(R.id.animation);
@@ -40,17 +38,16 @@ int Ran_Number = number.randInt(); //random coin chance
         //frameAnimation.start();
         MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.coin_drop_sound);
         mediaPlayer.start();
+        Ran_Number = number.randInt();
         {
             if (Ran_Number == 1)
             {
                 Coin.setBackgroundResource(R.drawable.plain_gold_coin);
-                Ran_Number = number.randInt();
 
             }
             if (Ran_Number == 2)
             {
                 Coin.setBackgroundResource(R.drawable.gold_coin);
-                Ran_Number = number.randInt();
             }
         }
 

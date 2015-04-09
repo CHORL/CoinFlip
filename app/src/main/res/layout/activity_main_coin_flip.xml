@@ -42,7 +42,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/Coin"
             android:clickable="true"
-            android:onClick="buttonOnClick" />
+            android:onClick="buttonOnClick"
+            android:scaleType="centerInside" />
     </LinearLayout>
     <!-- Just for display and to tell you what to do -->
 
