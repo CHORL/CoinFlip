@@ -22,7 +22,7 @@ int Ran_Number = number.randInt(); //random coin chance
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_coin_flip);
+        setContentView(R.layout.activity_main_coin_flip); //create the coin flip activity
         myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
         final ImageButton Coin = (ImageButton) findViewById(R.id.Coin); //create coin as an ImageButton
         Coin.setBackgroundResource(R.drawable.gold_coin); //coin is there when you start
