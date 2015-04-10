@@ -43,7 +43,9 @@
             android:id="@+id/Coin"
             android:clickable="true"
             android:onClick="buttonOnClick"
-            android:scaleType="centerInside" />
+            android:scaleType="centerInside"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp" />
     </LinearLayout>
     <!-- Just for display and to tell you what to do -->
 
