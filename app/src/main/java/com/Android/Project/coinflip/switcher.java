@@ -31,7 +31,7 @@ public class switcher extends ActionBarActivity{
 
             @Override
         public void onClick(View view){
-                Intent intent = new Intent(switcher.this, coinflip.class);
+                Intent intent = new Intent(switcher.this, MainCoinFlip.class);
                 startActivity(intent);
             }
 
