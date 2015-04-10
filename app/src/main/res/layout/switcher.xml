@@ -14,10 +14,11 @@
         android:text="This App Allows You To Toss A Coin"
         android:textStyle="bold|italic"
         android:textColor="#fffdff73"
+        android:textSize="@dimen/abc_action_bar_default_height_material"
         android:id="@+id/textView3"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:layout_weight="1" />
+        android:layout_weight="0.50" />
 
     <Button
         android:layout_width="wrap_content"
@@ -27,15 +28,17 @@
         android:textColor="#fffdff73"
         android:id="@+id/button2"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/round_button" />
+        android:background="@drawable/round_button"
+        android:layout_weight="0.10" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Made By Christoffer And Rickard"
+        android:text="Made By Christoffer.H And Rickard.L"
         android:textColor="#fffdff73"
         android:textStyle="bold|italic"
         android:id="@+id/textView2"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.12" />
 </LinearLayout>
