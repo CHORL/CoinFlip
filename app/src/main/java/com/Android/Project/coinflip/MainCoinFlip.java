@@ -32,10 +32,6 @@ int Ran_Number = number.randInt(); //random coin chance
 
     public void buttonOnClick(View Coin)
     {
-        //ImageView img_animation = (ImageView)findViewById(R.id.animation);
-        //img_animation.setBackgroundResource(R.drawable.animation);
-        //AnimationDrawable frameAnimation = (AnimationDrawable) img_animation.getBackground();
-        //frameAnimation.start();
         MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.coin_drop_sound);
         mediaPlayer.start();
         Ran_Number = number.randInt();
