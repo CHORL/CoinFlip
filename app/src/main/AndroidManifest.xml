@@ -18,7 +18,9 @@
                     android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainCoinFlip"></activity>
+        <activity
+            android:name=".MainCoinFlip">
+        </activity>
 
     </application>
 
