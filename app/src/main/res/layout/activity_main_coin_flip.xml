@@ -29,6 +29,7 @@
         android:textColor="#fffdff73"
         android:textSize="50sp"
         android:editable="true" />
+    <!--Hardcoded text because we don't change it.-->
 
     <LinearLayout
         android:orientation="horizontal"
@@ -46,7 +47,7 @@
             android:scaleType="centerInside"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="100dp" />
+        <!--Margins to make the image and coin properly scaled and round.-->
     </LinearLayout>
-    <!-- Just for display and to tell you what to do -->
 
 </LinearLayout>
