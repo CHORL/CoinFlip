@@ -2,13 +2,13 @@ package com.Android.Project.coinflip;
 //Class for generating a random number to use in deciding which side of the coin is to show
 import java.util.Random;
 //random utility to create numbers
-class randomnumbergenerator
+public class RandomNumberGenerator
 {
     public static int randInt()
     {
         //Two int and an object to create a random number between one and two
-        int min = 1;
-        int max = 2;
+        int min = 1;//The minimum number that can be generated
+        int max = 2;//The maximum number that can be generated
         Random rand = new Random();
 
 

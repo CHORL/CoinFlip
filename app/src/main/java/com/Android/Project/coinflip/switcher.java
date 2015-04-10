@@ -20,13 +20,11 @@ public class switcher extends ActionBarActivity{
     public void onCreate(Bundle savedInstances){
         super.onCreate(savedInstances);
         setContentView(R.layout.switcher);
-
         Button switchbutton = (Button)findViewById(R.id.button2);
 
         switchbutton.setOnClickListener(new View.OnClickListener(){
 
-
-            @Override
+    @Override
         public void onClick(View view){
                 Intent intent = new Intent(switcher.this, MainCoinFlip.class);
                 startActivity(intent); //Used an intent operation to move from the switcher activity to the coin flip
