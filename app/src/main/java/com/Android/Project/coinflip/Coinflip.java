@@ -1,0 +1,55 @@
+package com.Android.Project.coinflip;
+
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.media.MediaPlayer;
+
+
+
+public class coinflip extends ActionBarActivity
+{
+
+LinearLayout myLO;
+final randomnumbergenerator number = new randomnumbergenerator();
+int Ran_Number = number.randInt(); //random coin chance
+
+    @Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_coin_flip);
+        myLO = (LinearLayout) findViewById(R.id.MainCoinLayout);
+        final ImageButton Coin = (ImageButton) findViewById(R.id.Coin);
+        Coin.setBackgroundResource(R.drawable.gold_coin);
+    }
+
+    public void buttonOnClick(View Coin)
+    {
+        //ImageView img_animation = (ImageView)findViewById(R.id.animation);
+        //img_animation.setBackgroundResource(R.drawable.animation);
+        //AnimationDrawable frameAnimation = (AnimationDrawable) img_animation.getBackground();
+        //frameAnimation.start();
+        MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.coin_drop_sound);
+        mediaPlayer.start();
+        Ran_Number = number.randInt();
+        {
+            if (Ran_Number == 1)
+            {
+                Coin.setBackgroundResource(R.drawable.plain_gold_coin);
+
+            }
+            if (Ran_Number == 2)
+            {
+                Coin.setBackgroundResource(R.drawable.gold_coin);
+            }
+        }
+
+    }
+
+}

@@ -2,7 +2,7 @@ package com.Android.Project.coinflip;
 //Class for generating a random number to use in deciding which side of the coin is to show
 import java.util.Random;
 //random utility to create numbers
-public class RandomNumberGenerator
+class randomnumbergenerator
 {
     public static int randInt()
     {
